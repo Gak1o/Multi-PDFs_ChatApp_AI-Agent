@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyDOAQvDvOt94vk_NYOLYiYLVm4DlePzb7k"))
 
 def get_pdf_text(pdf_docs):
     text=""
@@ -76,8 +76,8 @@ def user_input(user_question):
 
 
 def main():
-    st.set_page_config("Multi PDF Chatbot", page_icon = ":scroll:")
-    st.header("Multi-PDF's 📚 - Chat Agent 🤖 ")
+    st.set_page_config("Aural AI", page_icon = ":scroll:")
+    st.header("Multi-PDF's Virtual Teacher")
 
     user_question = st.text_input("Ask a Question from the PDF Files uploaded .. ✍️📝")
 
@@ -86,7 +86,7 @@ def main():
 
     with st.sidebar:
 
-        st.image("img/Robot.jpg")
+        st.image("2.jpg")
         st.write("---")
         
         st.title("📁 PDF File's Section")
@@ -99,14 +99,14 @@ def main():
                 st.success("Done")
         
         st.write("---")
-        st.image("img/gkj.jpg")
-        st.write("AI App created by @ Gurpreet Kaur")  # add this line to display the image
+        st.image("1.jpg")
+        st.write("AI App created by @Hackaholics")  # add this line to display the image
 
 
     st.markdown(
         """
         <div style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0E1117; padding: 15px; text-align: center;">
-            © <a href="https://github.com/gurpreetkaurjethra" target="_blank">Gurpreet Kaur Jethra</a> | Made with ❤️
+            © <a href="https://github.com/Gak1o" target="_blank">Gak1o</a> | Made with ❤️
         </div>
         """,
         unsafe_allow_html=True
